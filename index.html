@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSpace | Learn Without Limits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">Edu<span>Space</span></a>
+    <button class="menu-btn" onclick="showMenu()" aria-label="Open menu">☰</button>
+
+    <nav id="menu">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Close menu">✕</button>
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#courses" onclick="closeMenu()">Courses</a>
+        <a href="#events" onclick="closeMenu()">Events</a>
+        <a href="#teachers" onclick="closeMenu()">Teachers</a>
+        <a href="#blog" onclick="closeMenu()">Blog</a>
+        <a href="#contact" class="nav-button" onclick="closeMenu()">Contact Us</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">LEARN SOMETHING NEW EVERY DAY</p>
+        <h1>Education Is The Key To Your <span>Future.</span></h1>
+        <p class="hero-text">Discover your potential, develop new skills and take the next step towards your dream career with EduSpace.</p>
+        <a href="#courses" class="btn">Explore Courses →</a>
+        <a href="#about" class="text-link">Discover More</a>
+
+        <div class="hero-stats">
+            <div><strong>20+</strong><small>Courses</small></div>
+            <div><strong>10+</strong><small>Expert Teachers</small></div>
+            <div><strong>500+</strong><small>Happy Learners</small></div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <article><span>📚</span><div><h3>Quality Courses</h3><p>Learn useful skills</p></div></article>
+    <article><span>👩‍🏫</span><div><h3>Expert Teachers</h3><p>Learn with guidance</p></div></article>
+    <article><span>🏆</span><div><h3>Learn at Your Pace</h3><p>Grow with confidence</p></div></article>
+    <article><span>💻</span><div><h3>Practical Learning</h3><p>Practice new ideas</p></div></article>
+</section>
+
+<!-- About -->
+<section class="section about" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students learning together">
+        <div class="experience"><strong>Learn</strong><span>Grow every day!</span></div>
+    </div>
+
+    <div class="about-text">
+        <p class="eyebrow">ABOUT EDUSPACE</p>
+        <h2>We Help You Build A Better <span>Future.</span></h2>
+        <p>Education is more than learning from books. It is about discovering your strengths, gaining confidence and preparing for real-world opportunities.</p>
+        <ul>
+            <li>✓ Easy-to-understand learning materials</li>
+            <li>✓ Practical and skill-based courses</li>
+            <li>✓ Supportive learning environment</li>
+        </ul>
+        <button class="btn" onclick="showDetails('about')">Learn More →</button>
+    </div>
+</section>
+
+<!-- Courses -->
+<section class="section grey" id="courses">
+    <div class="section-heading">
+        <p class="eyebrow">WHAT WE OFFER</p>
+        <h2>Explore Our Popular <span>Courses</span></h2>
+        <p>Find the right course to start your learning journey.</p>
+    </div>
+
+    <div class="cards">
+        <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="Web development workspace">
+            <div class="card-body">
+                <p class="category">DEVELOPMENT</p>
+                <h3>Web Development</h3>
+                <p>Build responsive websites using HTML, CSS and JavaScript.</p>
+                <div class="card-bottom"><span>⏱ 6 Weeks</span><button class="learn-link" onclick="showDetails('web')">Learn More →</button></div>
+            </div>
+        </article>
+
+        <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80" alt="Programming code on screen">
+            <div class="card-body">
+                <p class="category">PROGRAMMING</p>
+                <h3>Java Programming</h3>
+                <p>Explore Java fundamentals and object-oriented programming.</p>
+                <div class="card-bottom"><span>⏱ 8 Weeks</span><button class="learn-link" onclick="showDetails('java')">Learn More →</button></div>
+            </div>
+        </article>
+
+        <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=700&q=80" alt="Creative design workspace">
+            <div class="card-body">
+                <p class="category">CREATIVE DESIGN</p>
+                <h3>UI/UX Design</h3>
+                <p>Design attractive, simple and user-friendly digital products.</p>
+                <div class="card-bottom"><span>⏱ 4 Weeks</span><button class="learn-link" onclick="showDetails('design')">Learn More →</button></div>
+            </div>
+        </article>
+    </div>
+
+    <a href="#contact" class="btn center-button">Find Your Course →</a>
+</section>
+
+<!-- Learning Banner -->
+<section class="learning-banner">
+    <div>
+        <p class="eyebrow">YOUR FUTURE STARTS HERE</p>
+        <h2>Invest In Your Knowledge.<br>Build Your Dreams.</h2>
+        <p>Take one small step today towards a better tomorrow.</p>
+        <a href="#courses" class="btn">Start Learning →</a>
+    </div>
+</section>
+
+<!-- Events -->
+<section class="section" id="events">
+    <div class="section-heading">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>Upcoming <span>Events</span></h2>
+        <p>Learn, connect and share your ideas with others.</p>
+    </div>
+
+    <div class="cards">
+        <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80" alt="Students attending a workshop">
+            <div class="card-body">
+                <span class="event-date">15 NOV</span>
+                <h3>Web Design Workshop</h3>
+                <p>Explore website layouts and create your own design.</p>
+                <button class="learn-link" onclick="showDetails('workshop')">Know More →</button>
+            </div>
+        </article>
+
+        <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="Technology learning session">
+            <div class="card-body">
+                <span class="event-date">22 NOV</span>
+                <h3>Programming Day</h3>
+                <p>Improve your coding skills through practical activities.</p>
+                <button class="learn-link" onclick="showDetails('programming-day')">Know More →</button>
+            </div>
+        </article>
+
+        <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=700&q=80" alt="Students collaborating">
+            <div class="card-body">
+                <span class="event-date">30 NOV</span>
+                <h3>Student Meet-up</h3>
+                <p>Meet other learners and exchange fresh ideas.</p>
+                <button class="learn-link" onclick="showDetails('meetup')">Know More →</button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Teachers -->
+<section class="section grey" id="teachers">
+    <div class="section-heading">
+        <p class="eyebrow">MEET OUR TEAM</p>
+        <h2>Learn From Our <span>Teachers</span></h2>
+        <p>Friendly guidance to help you reach your learning goals.</p>
+    </div>
+
+    <div class="cards">
+        <article class="teacher-card">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Teacher Priya Sharma">
+            <h3>Priya Sharma</h3><p>Web Development</p>
+            <button class="learn-link" onclick="showDetails('priya')">Know More →</button>
+        </article>
+
+        <article class="teacher-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Teacher Arun Kumar">
+            <h3>Arun Kumar</h3><p>Java Programming</p>
+            <button class="learn-link" onclick="showDetails('arun')">Know More →</button>
+        </article>
+
+        <article class="teacher-card">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Teacher Meera Ravi">
+            <h3>Meera Ravi</h3><p>UI/UX Design</p>
+            <button class="learn-link" onclick="showDetails('meera')">Know More →</button>
+        </article>
+    </div>
+</section>
+
+<!-- Student Reviews -->
+<section class="testimonial section">
+    <p class="eyebrow">STUDENT EXPERIENCES</p>
+    <h2>What Our Learners Say</h2>
+
+    <div class="quote-card">
+        <div class="quote-mark">“</div>
+        <p id="quoteText">The lessons are easy to follow, and I enjoy learning new skills through practical examples.</p>
+        <h3 id="quoteName">Ananya R.</h3>
+        <p id="quoteRole" class="quote-role">Web Development Learner</p>
+        <div class="quote-buttons">
+            <button onclick="changeQuote(-1)" aria-label="Previous testimonial">←</button>
+            <button onclick="changeQuote(1)" aria-label="Next testimonial">→</button>
+        </div>
+    </div>
+</section>
+
+<!-- Blog -->
+<section class="section grey" id="blog">
+    <div class="section-heading">
+        <p class="eyebrow">OUR LATEST ARTICLES</p>
+        <h2>Ideas To Inspire Your <span>Learning</span></h2>
+        <p>Simple tips to help you learn smarter every day.</p>
+    </div>
+
+    <div class="cards">
+        <article class="blog-card">
+            <img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=700&q=80" alt="Notebook and study materials">
+            <div class="card-body">
+                <p class="category">STUDY TIPS</p>
+                <h3>5 Ways to Make Learning Easier</h3>
+                <p>Build small habits that make studying more effective.</p>
+                <button class="learn-link" onclick="showDetails('study-tips')">Read More →</button>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="Laptop used for web development">
+            <div class="card-body">
+                <p class="category">TECHNOLOGY</p>
+                <h3>Start Your Web Development Journey</h3>
+                <p>Discover the first steps to building your own website.</p>
+                <button class="learn-link" onclick="showDetails('web-journey')">Read More →</button>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=700&q=80" alt="Books and learning materials">
+            <div class="card-body">
+                <p class="category">CAREER GROWTH</p>
+                <h3>Keep Growing Your Skills</h3>
+                <p>Learn how regular practice can open new opportunities.</p>
+                <button class="learn-link" onclick="showDetails('career-growth')">Read More →</button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h2>Ready To Start Learning?</h2>
+    <p>Have a question? We would love to hear from you.</p>
+    <a href="mailto:info@eduspace.com" class="btn">Contact Us →</a>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div>
+        <h2>Stay Inspired With EduSpace</h2>
+        <p>Get learning updates and useful study tips.</p>
+    </div>
+    <form onsubmit="subscribe(event)">
+        <input type="email" id="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <p id="subscribeMessage" class="subscribe-message" aria-live="polite"></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-main">
+        <div>
+            <a href="#home" class="logo">Edu<span>Space</span></a>
+            <p>Learn new skills. Discover your potential.<br>Build your future with confidence.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#about">About Us</a>
+            <a href="#courses">Courses</a>
+            <a href="#events">Events</a>
+        </div>
+        <div>
+            <h3>Explore</h3>
+            <a href="#teachers">Our Teachers</a>
+            <a href="#blog">Latest Articles</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            <h3>Contact Info</h3>
+            <p>Email: info@eduspace.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 EduSpace. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </div>
+</footer>
+
+<!-- Reusable Popup -->
+<div class="popup" id="coursePopup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="courseTitle">
+        <button class="popup-close" onclick="closePopup()" aria-label="Close popup">✕</button>
+        <p class="eyebrow" id="popupCategory">EDUSPACE DETAILS</p>
+        <h2 id="courseTitle">Details</h2>
+        <p id="courseDescription"></p>
+        <p id="courseDuration"></p>
+        <p id="courseLevel"></p>
+        <button class="btn" onclick="closePopup()">Got It</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
